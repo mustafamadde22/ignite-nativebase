@@ -46,14 +46,14 @@ export const WelcomeScreen: FC<WelcomeScreenProps> = observer(function WelcomeSc
           testID="welcome-heading"
           style={$welcomeHeading}
           tx="welcomeScreen.readyForLaunch"
-          preset="heading"
+          fontSize={"xl"}
         />
-        <Text tx="welcomeScreen.exciting" preset="subheading" />
+        <Text tx="welcomeScreen.exciting" />
         <Image style={$welcomeFace} source={welcomeFace} resizeMode="contain" />
       </View>
 
       <View style={[$bottomContainer, $bottomContainerInsets]}>
-        <Text tx="welcomeScreen.postscript" size="md" />
+        <Text tx="welcomeScreen.postscript" fontSize={"md"} />
         {/* @demo remove-block-start */}
         <Button
           testID="next-screen-button"
